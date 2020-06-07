@@ -1,0 +1,30 @@
+@baseurl = http://localhost:5001/fjut-2020/us-central1
+
+###
+GET {{baseurl}}/auth/ HTTP/1.1
+
+###
+GET {{baseurl}}/auth/ HTTP/1.1
+
+###
+GET {{baseurl}}/devices/ HTTP/1.1
+###
+GET {{baseurl}}/devices/jFxWW5HgPnzexYldU2Jd HTTP/1.1
+###
+POST {{baseurl}}/devices/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"测试"
+}
+###
+PATCH {{baseurl}}/devices/jFxWW5HgPnzexYldU2Jd HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"测试"
+}
+###
+DELETE  {{baseurl}}/devices/jFxWW5HgPnzexYldU2Jd HTTP/1.1
+
+
